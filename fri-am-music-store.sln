@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2019
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "fri-am-music-store", "fri-am-music-store\fri-am-music-store.csproj", "{8E309010-F3DB-4F9F-9F5A-9FC4E282F2FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "fri-am-music-store.Tests", "fri-am-music-store.Tests\fri-am-music-store.Tests.csproj", "{AA507DC1-8535-4CFD-AFC7-C54A3DE0DB6D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8E309010-F3DB-4F9F-9F5A-9FC4E282F2FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E309010-F3DB-4F9F-9F5A-9FC4E282F2FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E309010-F3DB-4F9F-9F5A-9FC4E282F2FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E309010-F3DB-4F9F-9F5A-9FC4E282F2FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA507DC1-8535-4CFD-AFC7-C54A3DE0DB6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA507DC1-8535-4CFD-AFC7-C54A3DE0DB6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA507DC1-8535-4CFD-AFC7-C54A3DE0DB6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA507DC1-8535-4CFD-AFC7-C54A3DE0DB6D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {12CAA8CB-94EA-479F-96D4-48C99F98B214}
+	EndGlobalSection
+EndGlobal
