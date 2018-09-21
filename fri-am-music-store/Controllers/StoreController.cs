@@ -13,5 +13,12 @@ namespace fri_am_music_store.Controllers
         {
             return View();
         }
+
+        // GET: Store/Product/Product-Name
+        public ActionResult Product(string ProductName)
+        {
+            ViewBag.Product = ProductName;
+            return View();
+        }
     }
 }
