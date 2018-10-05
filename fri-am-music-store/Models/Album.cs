@@ -2,6 +2,7 @@ namespace fri_am_music_store.Models
 {
     using System;
     using System.Collections.Generic;
+    using System.ComponentModel;
     using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
@@ -27,9 +28,13 @@ namespace fri_am_music_store.Models
         public string Title { get; set; }
 
         [Column(TypeName = "numeric")]
+        [DataType(DataType.Currency)]
+        [Range(0, 100000, ErrorMessage = "This is a stupid price.  Not happening")]
         public decimal Price { get; set; }
 
         [StringLength(1024)]
+        //[DisplayName("Album Art")]
+        [Display(Name = "Album Art")]
         public string AlbumArtUrl { get; set; }
 
         public virtual Artist Artist { get; set; }
