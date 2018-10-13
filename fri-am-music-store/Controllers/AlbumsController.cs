@@ -10,6 +10,7 @@ using fri_am_music_store.Models;
 
 namespace fri_am_music_store.Controllers
 {
+    [Authorize(Roles = "Administrator")]
     public class AlbumsController : Controller
     {
         // automatically connects to database
@@ -23,6 +24,7 @@ namespace fri_am_music_store.Controllers
         }
 
         // GET: Albums/Details/5
+        [OverrideAuthorization]
         public ActionResult Details(int? id)
         {
             if (id == null)
