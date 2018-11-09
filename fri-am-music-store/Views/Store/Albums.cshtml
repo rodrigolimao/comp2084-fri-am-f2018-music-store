@@ -17,7 +17,10 @@
             @Html.DisplayFor(modelItem => item.Artist.Name)<br />
             @Html.DisplayFor(modelItem => item.Price)
         </div>
-        <button class="btn btn-primary">Add to Cart</button>        
+        @*<input name="Count" id="Count" type="number" min="1" placeholder="Quantity" />*@
+        <a href="/Store/AddToCart?AlbumId=@item.AlbumId">
+            <button class="btn btn-primary">Add to Cart</button>
+        </a>       
     </div>
      }
 </section>
