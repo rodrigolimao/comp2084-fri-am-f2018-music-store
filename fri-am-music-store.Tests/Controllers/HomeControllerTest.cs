@@ -35,7 +35,7 @@ namespace fri_am_music_store.Tests.Controllers
             ViewResult result = controller.About() as ViewResult;
 
             // Assert
-            Assert.AreEqual("Your application description page.", result.ViewBag.Message);
+            Assert.AreEqual("A new message about us", result.ViewBag.Message);
         }
 
         [TestMethod]
