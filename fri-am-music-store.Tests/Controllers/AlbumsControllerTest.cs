@@ -74,5 +74,52 @@ namespace fri_am_music_store.Tests.Controllers
             // assert
             CollectionAssert.AreEqual(albums, result);
         }
+
+        // GET: Albums/Details/100
+        #region
+
+        [TestMethod]
+        public void DetailsNoId()
+        {
+            // act
+            ViewResult result = (ViewResult)controller.Details(null);
+
+            // assert
+            Assert.AreEqual("Error", result.ViewName);
+        }
+
+        [TestMethod]
+        public void DetailsInvalidId()
+        {
+            // act
+            ViewResult result = (ViewResult)controller.Details(104);
+
+            // assert
+            Assert.AreEqual("Error", result.ViewName);
+        }
+
+        [TestMethod]
+        public void DetailsValidIdLoadsView()
+        {
+            // act
+            ViewResult result = (ViewResult)controller.Details(300);
+
+            // assert
+            Assert.AreEqual("Details", result.ViewName);
+        }
+
+        [TestMethod]
+        public void DetailsValidIdLoadsAlbum()
+        {
+            // act
+            Album result = (Album)((ViewResult)controller.Details(300)).Model;
+
+            // assert
+            Assert.AreEqual(albums[1], result);
+        }
+        #endregion
+
+
+
     }
 }
